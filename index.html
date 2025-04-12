@@ -5,30 +5,100 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js"></script>
         
     </head>
     <body>
         <header>
             <div class="main-logo">
-                <img src="https://picsum.photos/id/235/100" alt="logo">
+                <img src="https://picsum.photos/id/235/70" alt="logo">
             </div>
             <div class="main-navigation">
-                <a href="#">home</a>
-                <a href="#">home</a>
-                <a href="#">home</a>
-                <a href="#">home</a>
+                <a href="#welcome-container">Home</a>
+                <a href="#">Our Profile</a>
+                <a href="#">Portofolio</a>
+                <a href="#message-us-container">Message Us</a>
             </div>
         </header>
-        <hr>
-        <section>
-
+        <section id="welcome-container">
+            <div class="welcome-text">
+                <h1>Hi _, Welcome to the Website</h2>
+                <p>ini adalah website latihan pertama</p>
+            </div>
+            <img src="https://picsum.photos/seed/picsum/1366/578" alt="">
         </section>
-        <section> 
 
+        <h2>Our Headquarters</h2>
+        <section id="headquarter-container"> 
+            <div class="cities">
+                <div class="city">
+                    <img src="assets/monas.jpg" alt="Jakarta"> 
+                    <h4>Jakarta</h4>
+                </div>
+                <div class="city">
+                    <img src="assets/gedung-sate.jpg" alt="Bandung"> 
+                    <h4>Bandung</h4>
+                </div>
+                <div class="city">
+                    <img src="assets/surabaya.jpg" alt="Surabaya"> 
+                    <h4>Surabaya</h4>  
+                </div>
+            </div>
         </section>
-        <section>
 
+        <h2>Message Us</h2>
+        <section id="message-us-container">
+            <div class="form-container">
+                <form action="#">
+                    <table>
+                        <tr>
+                            <td><label for="nama">Nama</label></td>
+                            <td><label>:</label></td>
+                            <td><input type="text" id="nama" placeholder="Nama"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="dob">Tanggal Lahir</label></td>
+                            <td><label>:</label></td>
+                            <td><input type="date" id="tgl"></td>
+                        </tr>
+                        <tr>
+                            <td>Jenis Kelamin</td>
+                            <td><label>:</label></td>
+                            <td>
+                                <div class="radio-group">
+                                <input type="radio" name="gender" value="Laki-Laki">Laki-Laki
+                                <input type="radio" name="gender" value="Perempuan">Perempuan
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="pesan">Pesan</label></td>
+                            <td><label>:</label></td>
+                            <td><textarea id="pesan" placeholder="Pesan"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button type="submit">Submit</button></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="form-result-container">
+                <p><strong>Current Time :</strong></p>
+                <br>
+                <p><strong>Nama :</strong></p>
+                <p><strong>Tanggal Lahir :</strong></p>
+                <p><strong>Jenis Kelamin :</strong></p>
+                <p><strong>Pesan :</strong></p>
+                
+            </div>
+            
         </section>
+        <footer>
+            <hr>
+            <p>Created by Muhammad Faris Ihsan</p>
+            <hr>
+
+        </footer>
         
 
     </body>
