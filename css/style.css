@@ -9,8 +9,13 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    position: sticky;
-    border-bottom: 5px;
+    /* position: sticky; */
+    background-color: rgb(0, 0, 0, 0.1);
+    border: 1px solid black;
+    border-radius: 5px;
+    width: auto;
+    top: 0;
+
 }
 .main-logo>img{
     border-radius: 50%;
@@ -29,27 +34,115 @@ header {
     text-decoration: none;
 
 }
-#welcome-container>.welcome-text{
+#welcome-container{
+    position: relative;
+}
+.welcome-text{
+    width: 100%;
+    top: 20%;
     position: absolute;
-    padding: 50px;
+    text-align: center;
     font-weight: bold;
     color: white;
-    font-size: x-large;
+    font-size: 2vw;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
     
     
+}
+.welcome-text p{
+    font-weight: 350;
+    color: black;
 }
 #welcome-container>img{
     width: 100%;
     height: auto;
     
 }
+#welcome-container button{
+    justify-content: center;
+    width: 20%;
+    background-color: transparent;
+    border: 1.5px solid black;
+}
+#profile-container {
+  padding: 60px 20px;
+  background-color: #f7f7f7;
+  font-family: Arial, sans-serif;
+}
+
+#profile-container .container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+#profile-container h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#profile-container .subtitle {
+  text-align: center;
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+#profile-container .content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+#profile-container .text {
+  flex: 1 1 300px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+}
+
+#profile-container .image {
+  flex: 1 1 300px;
+}
+
+#profile-container .image img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.destinations {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* padding-left: 50px; */
+}
+.venue img{
+    width: 400px;
+    height: 260px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.venue p{
+    /* position: absolute; */
+    font-weight: 500;
+    /* color: white;
+    text-shadow: 2px 2px 3px black; */
+    padding-left: 5px;
+    
+}
 
 .cities {
-    display: flex;
-    justify-content: flex-start; /* or center if you prefer */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
     gap: 50px;
     margin-top: 50px;
-    padding-left: 50px;
+    /* padding-left: 50px; */
 }
 
 .city {
@@ -63,9 +156,9 @@ header {
     object-fit: cover;
 }
 #message-us-container{
-    background-color: rgba(0,0,0, 0.3);
-    display: flex;
-    justify-content: space-between;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     /* gap: 10%; */
     padding: 20px;
     padding-left: 50px;
@@ -107,12 +200,15 @@ button {
     
     border: 1px solid black;
     padding: 20px;
-    width: 100%;
+    width: 80%;
     border-radius: 20px;
 }
 footer{
     text-align: end;
+    background-color: rgb(0, 0, 0, 0.4);
     /* border: 1px solid black; */
     padding: 30px;
+    color: white;
+    font-weight: 300;
 }
  
