@@ -9,7 +9,7 @@
         
     </head>
     <body>
-        <header>
+        <header class="header-wrapper">
             <div class="main-logo">
                 <img src="https://picsum.photos/id/235/70" alt="logo">
             </div>
@@ -21,13 +21,13 @@
             </div>
         </header>
         <section id="welcome-container">
+            <div class="overlay"></div>
+            <img src="https://picsum.photos/seed/picsum/1366/578" alt="">
             <div class="welcome-text">
-                <h1>Hi _, Welcome to WeTravel</h2>
+                <h1>Hi _, Welcome to WeTravel</h1>
                 <p>Your Travel Solution</p>
                 <button>Contact Us</button>
             </div>
-            <img src="https://picsum.photos/seed/picsum/1366/578" alt="">
-            <div class="overlay"></div>
         </section>
 
         <h2>Our Profile</h2>
@@ -96,7 +96,7 @@
         <h2>Message Us</h2>
         <section id="message-us-container">
             <div class="form-container">
-                <form action="#">
+                <form name="message-form" onsubmit="return validateForm()">
                     <table>
                         <tr>
                             <td><label for="nama">Nama</label></td>
@@ -124,29 +124,26 @@
                             <td><textarea id="pesan" placeholder="Pesan"></textarea></td>
                         </tr>
                         <tr>
-                            <td colspan="2"><button type="submit">Submit</button></td>
+                            <td><button type="submit">Submit</button></td>
                         </tr>
                     </table>
                 </form>
             </div>
             <div class="form-result-container">
-                <p><strong>Current Time :</strong></p>
+                <p><strong>Current Time : <span id="time"></span></strong></p>
                 <br>
-                <p><strong>Nama :</strong></p>
-                <p><strong>Tanggal Lahir :</strong></p>
-                <p><strong>Jenis Kelamin :</strong></p>
-                <p><strong>Pesan :</strong></p>
-                
+                <p><strong>Nama : <span id="sender-Nama"></span></strong></p>
+                <p><strong>Tanggal Lahir : <span id="sender-Tanggal"></span></strong></p>
+                <p><strong>Jenis Kelamin : <span id="sender-Gender"></span></strong></p>
+                <p><strong>Pesan : <span id="sender-Pesan"></span></strong></p>
             </div>
-            
         </section>
+
         <footer>
             <hr>
             <p>Created by Muhammad Faris Ihsan</p>
             <hr>
-
         </footer>
-        
-
+        <script src="js/script.js"></script>
     </body>
 </html>
